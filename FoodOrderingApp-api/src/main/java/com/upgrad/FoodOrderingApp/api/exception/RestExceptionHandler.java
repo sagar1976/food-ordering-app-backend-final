@@ -35,4 +35,19 @@ public class RestExceptionHandler extends Exception {
                 new ErrorResponse().code(exe.getCode()).message(exe.getErrorMessage()), HttpStatus.FORBIDDEN
         );
     }
+
+    @ExceptionHandler(AddressNotFoundException.class)
+    public ResponseEntity<ErrorResponse> resourceNotFoundException(AddressNotFoundException exe , WebRequest request){
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(exe.getCode()).message(exe.getErrorMessage()), HttpStatus.FORBIDDEN
+        );
+    }
+
+
+    @ExceptionHandler(SaveAddressException.class)
+    public ResponseEntity<ErrorResponse> resourceNotFoundException(SaveAddressException exe , WebRequest request){
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(exe.getCode()).message(exe.getErrorMessage()), HttpStatus.FORBIDDEN
+        );
+    }
 }
