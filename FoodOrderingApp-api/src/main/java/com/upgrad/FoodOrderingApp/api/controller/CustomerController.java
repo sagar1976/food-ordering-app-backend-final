@@ -3,7 +3,7 @@ package com.upgrad.FoodOrderingApp.api.controller;
 
 import com.upgrad.FoodOrderingApp.api.model.*;
 import com.upgrad.FoodOrderingApp.service.businness.*;
-//import com.upgrad.FoodOrderingApp.service.entity.CustomerAuthTokenEntity;
+import com.upgrad.FoodOrderingApp.service.entity.CustomerAuthTokenEntity;
 import com.upgrad.FoodOrderingApp.service.entity.CustomerEntity;
 import com.upgrad.FoodOrderingApp.service.exception.AuthenticationFailedException;
 import com.upgrad.FoodOrderingApp.service.exception.AuthorizationFailedException;
@@ -32,6 +32,9 @@ public class CustomerController {
     @Autowired
     SignupBusinessService signupBusinessService;
 
+    @Autowired
+    LoginBusinessService loginBusinessService;
+
     @RequestMapping(method = RequestMethod.POST, path = "/customer/signup", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<SignupCustomerResponse> signup(final SignupCustomerRequest signupCustomerRequest) throws SignUpRestrictedException{
         CustomerEntity customerEntity = new CustomerEntity();
@@ -48,6 +51,21 @@ public class CustomerController {
         SignupCustomerResponse signupCustomerResponse = new SignupCustomerResponse().id(createdCustomer.getUuid())
                 .status("CUSTOMER SUCCESSFULLY REGISTERED");
         return new ResponseEntity<SignupCustomerResponse>(signupCustomerResponse ,HttpStatus.CREATED);
+    }
+
+    @RequestMapping(method= RequestMethod.POST, path="/customer/login", consumes= MediaType.APPLICATION_JSON_UTF8_VALUE, produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<LoginResponse> signIn(@RequestHeader("authorization") final String authorization) throws AuthenticationFailedException {
+        byte[] decode = Base64.getDecoder().decode(authorization.split("Basic ")[1]);
+        String decodedText = new String(decode);
+        String[] decodedArray = decodedText.split(":");
+
+        CustomerAuthTokenEntity customerAuthTokenEntity = loginBusinessService.authenticate(decodedArray[0],decodedArray[1]);
+        CustomerEntity customer = customerAuthTokenEntity.getCustomer();
+        LoginResponse loginResponse= new LoginResponse().id(customer.getUuid()).message("LOGGED IN SUCCESSFULLY").firstName(customer.getFirstname()).lastName(customer.getLastname()).emailAddress(customer.getEmail()).contactNumber(customer.getContact_Number());
+        HttpHeaders headers = new HttpHeaders();
+        // to send the auth token as header as it can not go in payload
+        headers.add("access-token", customerAuthTokenEntity.getAccessToken());
+        return new ResponseEntity<LoginResponse>(loginResponse , headers, HttpStatus.OK);
     }
 
 }
