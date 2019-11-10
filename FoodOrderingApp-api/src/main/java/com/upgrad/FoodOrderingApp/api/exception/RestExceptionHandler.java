@@ -28,4 +28,11 @@ public class RestExceptionHandler extends Exception {
                 new ErrorResponse().code(exe.getCode()).message(exe.getErrorMessage()), HttpStatus.FORBIDDEN
         );
     }
+
+    @ExceptionHandler(UpdateCustomerException.class)
+    public ResponseEntity<ErrorResponse> resourceNotFoundException(UpdateCustomerException exe , WebRequest request){
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(exe.getCode()).message(exe.getErrorMessage()), HttpStatus.FORBIDDEN
+        );
+    }
 }

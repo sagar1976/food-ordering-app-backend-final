@@ -41,6 +41,9 @@ public class CustomerController {
     @Autowired
     UpdateCustomerService customerService;
 
+    @Autowired
+    UpdatePasswordService updatePasswordService;
+
     @RequestMapping(method = RequestMethod.POST, path = "/customer/signup", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<SignupCustomerResponse> signup(final SignupCustomerRequest signupCustomerRequest) throws SignUpRestrictedException{
         CustomerEntity customerEntity = new CustomerEntity();
@@ -92,6 +95,19 @@ public class CustomerController {
         UpdateCustomerResponse updateCustomerResponse = new UpdateCustomerResponse().id(updatedCustomer.getUuid()).
                 firstName(updatedCustomer.getFirstname()).lastName(updatedCustomer.getLastname()).status("CUSTOMER DETAILS UPDATED SUCCESSFULLY");
         return new ResponseEntity<UpdateCustomerResponse>(updateCustomerResponse,HttpStatus.OK);
+    }
+
+    @RequestMapping(method = PUT, path = "/customer/password", consumes = APPLICATION_JSON_UTF8_VALUE, produces = APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity updatePassword(@RequestHeader("authorization") String accessToken,
+                                         @RequestBody final UpdatePasswordRequest updatePasswordRequest) throws AuthorizationFailedException, UpdateCustomerException {
+        String[]authorisationData = accessToken.split(" ");
+        String userAccessToken=authorisationData[1];
+        String newPassword = updatePasswordRequest.getNewPassword();
+        String oldPassword = updatePasswordRequest.getOldPassword();
+        CustomerEntity updatedPassword=updatePasswordService.updatePassword(userAccessToken,newPassword,oldPassword);
+        UpdatePasswordResponse updatePasswordResponse = new UpdatePasswordResponse().id(updatedPassword.getUuid())
+                .status("CUSTOMER PASSWORD UPDATED SUCCESSFULLY");
+        return new ResponseEntity<UpdatePasswordResponse>(updatePasswordResponse,HttpStatus.OK);
     }
 
 }
