@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2187793b-e64d-48fa-93dc-77d9c32a3738" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/AddressControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CategoryControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CustomerControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/ItemControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/OrderControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/PaymentControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/RestaurantControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-db/target/FoodOrderingApp-db.jar" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-db/target/FoodOrderingApp-db.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/FoodOrderingApp-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/FoodOrderingApp-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,12 +29,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/FoodOrderingAppApiApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CustomerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-344">
+              <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/RestExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -38,7 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>categoryName</find>
       <find>view/update/delete any one</find>
       <find>System</find>
       <find>authori</find>
@@ -68,6 +103,7 @@
       <find>updateRestaurantRating</find>
       <find>getCouponByCouponName</find>
       <find>getCategoryById</find>
+      <find>test</find>
     </findStrings>
     <replaceStrings>
       <replace>pincode</replace>
@@ -87,11 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CategoryEntity.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/UpdateCustomerException.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/SaveAddressException.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/RestaurantNotFoundException.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/PaymentMethodNotFoundException.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/OrderNotFoundException.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/ItemNotFoundException.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/InvalidRatingException.java" />
@@ -99,19 +130,16 @@
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/CategoryNotFoundException.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/AuthenticationFailedException.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/AddressNotFoundException.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryService.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/ItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/ItemService.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/ItemController.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/OrderService.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/RestExceptionHandler.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/PaymentServiceImpl.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/PaymentService.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressServiceImpl.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressService.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-api/pom.xml" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-db/src/main/resources/sql/insert.sql" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/endpoints/restaurant.json" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/endpoints/payment.json" />
@@ -121,13 +149,10 @@
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/endpoints/category.json" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/FoodOrderingAppApiApplication.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/RestaurantService.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/RestaurantController.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/RestaurantServiceImpl.java" />
-        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/RestaurantControllerTest.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/AddressControllerTest.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CategoryControllerTest.java" />
@@ -138,8 +163,32 @@
         <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/PaymentControllerTest.java" />
         <option value="$PROJECT_DIR$/FoodOrderingApp-db/src/main/resources/config/localhost.properties" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/config/SwaggerConfiguration.java" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/SignupBusinessService.java" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CustomerEntity.java" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-api/pom.xml" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-service/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CustomerDao.java" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/FoodOrderingAppApiApplication.java" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/RestExceptionHandler.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="660" />
@@ -155,6 +204,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,19 +220,102 @@
             <path>
               <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="FoodOrderingApp-db" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="FoodOrderingApp-db" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodOrderingAppBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodOrderingAppBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodOrderingApp-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,7 +327,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572391215211" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573374691034" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -204,22 +337,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Documents\FoodOrderingAppBackend\FoodOrderingApp-db\src\main\resources\config" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.upgrad.FoodOrderingApp.api.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\FoodOrderingAppBackend\FoodOrderingApp-api\src\main\java\com\upgrad\FoodOrderingApp\api\exception" />
+      <recent name="E:\FoodOrderingAppBackend\FoodOrderingApp-service\src\main\java\com\upgrad\FoodOrderingApp\service\entity" />
+      <recent name="E:\FoodOrderingAppBackend\FoodOrderingApp-service\src\main\java\com\upgrad\FoodOrderingApp\service\dao" />
+      <recent name="E:\FoodOrderingAppBackend\FoodOrderingApp-service\src\main\java\com\upgrad\FoodOrderingApp\service\businness" />
+      <recent name="E:\FoodOrderingAppBackend\FoodOrderingApp-api\src\main\java\com\upgrad\FoodOrderingApp\api\controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.upgrad.FoodOrderingApp.service.exception" />
       <recent name="com.upgrad.FoodOrderingApp.api.config" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\razi.akram\Downloads\FoodOrderingAppBackend\FoodOrderingApp-api\src\test\java\com\upgrad\FoodOrderingApp\api\controller" />
-      <recent name="C:\Users\razi.akram\Downloads\FoodOrderingAppBackend\FoodOrderingApp-api\src\main\resources\endpoints" />
-      <recent name="C:\Users\razi.akram\Documents\FoodOrderingAppBackend\FoodOrderingApp-api\src\test\java\com\upgrad\FoodOrderingApp\api\controller" />
-      <recent name="C:\Users\Admin\Documents\FoodOrderingAppBackend\FoodOrderingApp-service\src\main\java\com\upgrad\FoodOrderingApp\service\exception" />
-      <recent name="C:\Users\Admin\Documents\FoodOrderingAppBackend\FoodOrderingApp-api\src\main\java\com\upgrad\FoodOrderingApp\api\config" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\FoodOrderingAppBackend\FoodOrderingApp-db\src\main\resources\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -374,7 +507,8 @@
       <workItem from="1542258014778" duration="187590000" />
       <workItem from="1543492206993" duration="13152000" />
       <workItem from="1545232696710" duration="1008000" />
-      <workItem from="1572388675377" duration="2493000" />
+      <workItem from="1572388675377" duration="3311000" />
+      <workItem from="1573355937231" duration="6009000" />
     </task>
     <servers />
   </component>
@@ -411,14 +545,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244971000" />
+    <option name="totallyTimeSpent" value="251798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28971255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29425114" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -426,8 +559,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.27168575" />
@@ -441,6 +573,8 @@
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32569557" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -451,7 +585,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Maven" order="10" />
+      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.11119516" />
     </layout>
     <layout-to-restore>
       <window_info id="Web" order="0" side_tool="true" />
@@ -493,19 +627,8 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/exception/ItemNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="77" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/AddressEntity.java" />
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/PaymentEntity.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/ItemServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/PaymentServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/RestExceptionHandler.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/target/generated-sources/com/upgrad/FoodOrderingApp/api/model/RestaurantListResponse.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/endpoints/payment.json">
@@ -546,7 +669,6 @@
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/PaymentService.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/OrderServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CustomerController.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/PaymentController.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/RestaurantService.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/ItemController.java" />
@@ -555,13 +677,6 @@
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/RestaurantServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/OrderController.java" />
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java" />
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/endpoints/address.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -587,34 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2760">
           <caret line="140" column="1" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/config/SwaggerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/FoodOrderingAppApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/application.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -670,17 +757,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-db/src/main/resources/config/localhost.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-db/src/main/resources/config/localhost.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CustomerEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/config/SwaggerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/SignupBusinessService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/FoodOrderingAppApiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-344">
+          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/RestExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
