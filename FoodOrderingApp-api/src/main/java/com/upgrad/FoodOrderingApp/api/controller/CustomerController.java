@@ -38,6 +38,9 @@ public class CustomerController {
     @Autowired
     LogoutBusinessService logoutBusinessService;
 
+    @Autowired
+    UpdateCustomerService customerService;
+
     @RequestMapping(method = RequestMethod.POST, path = "/customer/signup", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<SignupCustomerResponse> signup(final SignupCustomerRequest signupCustomerRequest) throws SignUpRestrictedException{
         CustomerEntity customerEntity = new CustomerEntity();
@@ -76,6 +79,19 @@ public class CustomerController {
         CustomerEntity logoutUser = logoutBusinessService.logOut(authorization);
         LogoutResponse logoutResponse = new LogoutResponse().id(logoutUser.getUuid()).message("LOGGED OUT SUCCESSFULLY");
         return new ResponseEntity<LogoutResponse>(logoutResponse, HttpStatus.OK);
+    }
+
+    @RequestMapping(method = PUT, path = "/customer", consumes = APPLICATION_JSON_UTF8_VALUE, produces = APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity updateUser(@RequestHeader("authorization") String accessToken,
+                                     @RequestBody final UpdateCustomerRequest updatedCustomerRequest) throws AuthorizationFailedException, UpdateCustomerException {
+        String[]authorisationData = accessToken.split(" ");
+        String userAccessToken=authorisationData[1];
+        String firstName = updatedCustomerRequest.getFirstName();
+        String lastName = updatedCustomerRequest.getLastName();
+        CustomerEntity updatedCustomer=customerService.updateCustomer(userAccessToken,firstName,lastName);
+        UpdateCustomerResponse updateCustomerResponse = new UpdateCustomerResponse().id(updatedCustomer.getUuid()).
+                firstName(updatedCustomer.getFirstname()).lastName(updatedCustomer.getLastname()).status("CUSTOMER DETAILS UPDATED SUCCESSFULLY");
+        return new ResponseEntity<UpdateCustomerResponse>(updateCustomerResponse,HttpStatus.OK);
     }
 
 }
