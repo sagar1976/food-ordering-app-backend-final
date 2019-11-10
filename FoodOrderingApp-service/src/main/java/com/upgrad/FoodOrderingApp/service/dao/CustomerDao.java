@@ -51,4 +51,18 @@ public class CustomerDao {
         entityManager.persist(customerAuthTokenEntity);
         return customerAuthTokenEntity;
     }
+
+    public void updateCustomerAuthToken(CustomerAuthTokenEntity customerAuthTokenEntity){
+        entityManager.merge(customerAuthTokenEntity);
+
+    }
+
+    public CustomerAuthTokenEntity checkAuthToken(String accessToken){
+        try {
+            return entityManager.createNamedQuery("getToken", CustomerAuthTokenEntity.class).setParameter("accessToken", accessToken).
+                    getSingleResult();
+        }catch(NoResultException nre){
+            return null;
+        }
+    }
 }

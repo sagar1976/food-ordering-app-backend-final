@@ -35,6 +35,9 @@ public class CustomerController {
     @Autowired
     LoginBusinessService loginBusinessService;
 
+    @Autowired
+    LogoutBusinessService logoutBusinessService;
+
     @RequestMapping(method = RequestMethod.POST, path = "/customer/signup", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<SignupCustomerResponse> signup(final SignupCustomerRequest signupCustomerRequest) throws SignUpRestrictedException{
         CustomerEntity customerEntity = new CustomerEntity();
@@ -66,6 +69,13 @@ public class CustomerController {
         // to send the auth token as header as it can not go in payload
         headers.add("access-token", customerAuthTokenEntity.getAccessToken());
         return new ResponseEntity<LoginResponse>(loginResponse , headers, HttpStatus.OK);
+    }
+
+    @RequestMapping(method=RequestMethod.POST, path="/customer/logout", consumes= MediaType.APPLICATION_JSON_UTF8_VALUE, produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<LogoutResponse> signOut(@RequestHeader("authorization") final String authorization) throws AuthorizationFailedException {
+        CustomerEntity logoutUser = logoutBusinessService.logOut(authorization);
+        LogoutResponse logoutResponse = new LogoutResponse().id(logoutUser.getUuid()).message("LOGGED OUT SUCCESSFULLY");
+        return new ResponseEntity<LogoutResponse>(logoutResponse, HttpStatus.OK);
     }
 
 }
