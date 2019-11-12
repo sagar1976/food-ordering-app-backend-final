@@ -83,4 +83,18 @@ public class AddressController {
         return new ResponseEntity<List<AddressListResponse>>(address, HttpStatus.OK);
     }
 
+    @RequestMapping(method = RequestMethod.DELETE, path="address/{addressId}",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<DeleteAddressResponse> deleteAddress(@PathVariable("addressId") final String addressID, @RequestHeader("authorization") final String authorization)
+            throws AuthorizationFailedException, AddressNotFoundException {
+
+        String [] bearerToken = authorization.split("Bearer ");
+
+        final String deleteAddress = addressBusinessService.deleteAddress(addressID,bearerToken[1]);
+
+        DeleteAddressResponse deleteAddressResponse = new DeleteAddressResponse().id(UUID.fromString(deleteAddress)).status("Address Deleted");
+
+        return  new ResponseEntity<DeleteAddressResponse>(deleteAddressResponse, HttpStatus.OK);
+
+    }
+
 }
