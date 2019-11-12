@@ -56,4 +56,31 @@ public class AddressController {
         return new ResponseEntity<SaveAddressResponse>(saveAddressResponse, HttpStatus.CREATED);
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = "/address/customer", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<List<AddressListResponse>> getAllAddressByCustomer (@RequestHeader("authorization") final String authorization)
+            throws AuthorizationFailedException {
+
+        String [] bearerToken = authorization.split("Bearer ");
+
+        List<CustomerAddressEntity> AE = customerBusinessService.getAddressByCustomer(bearerToken[1]);
+
+        List<AddressListResponse> address = new ArrayList<>();
+
+        for(CustomerAddressEntity ce : AE){
+            AddressEntity a = ce.getAddressEntity();
+            AddressListState addressListState = new AddressListState().id(UUID.fromString(a.getStateEntity().getUuid())).stateName(a.getStateEntity().getState_name());
+            AddressList addressList = new AddressList()
+                    .id(UUID.fromString(a.getUuid()))
+                    .flatBuildingName(a.getFlat_buil_number())
+                    .locality(a.getLocality())
+                    .city(a.getCity())
+                    .pincode(a.getPincode())
+                    .state(addressListState);
+            AddressListResponse alr = new AddressListResponse().addAddressesItem(addressList);
+            address.add(alr);
+        }
+
+        return new ResponseEntity<List<AddressListResponse>>(address, HttpStatus.OK);
+    }
+
 }
