@@ -3,6 +3,7 @@ package com.upgrad.FoodOrderingApp.api.controller;
 import com.upgrad.FoodOrderingApp.api.model.*;
 import com.upgrad.FoodOrderingApp.service.businness.AddressBusinessService;
 import com.upgrad.FoodOrderingApp.service.businness.CustomerBusinessService;
+import com.upgrad.FoodOrderingApp.service.businness.StateBusinessService;
 import com.upgrad.FoodOrderingApp.service.dao.CustomerDao;
 import com.upgrad.FoodOrderingApp.service.entity.*;
 import com.upgrad.FoodOrderingApp.service.exception.AddressNotFoundException;
@@ -27,6 +28,9 @@ public class AddressController {
 
     @Autowired
     CustomerBusinessService customerBusinessService;
+
+    @Autowired
+    StateBusinessService stateBusinessService;
 
     @RequestMapping(method = RequestMethod.POST, path = "/address", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<SaveAddressResponse> saveAddress(final SaveAddressRequest saveAddressRequest, @RequestHeader("authorization") final String authorization)
@@ -94,6 +98,23 @@ public class AddressController {
         DeleteAddressResponse deleteAddressResponse = new DeleteAddressResponse().id(UUID.fromString(deleteAddress)).status("Address Deleted");
 
         return  new ResponseEntity<DeleteAddressResponse>(deleteAddressResponse, HttpStatus.OK);
+
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = "/states", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<List<StatesListResponse>> getAllStates(){
+        List<StateEntity> SB = stateBusinessService.getAllStates();
+
+        List<StatesListResponse> states = new ArrayList<>();
+
+        for(StateEntity stateEntity : SB) {
+            UUID stateUUID = UUID.fromString(stateEntity.getUuid());
+            StatesList statesList = new StatesList().id(stateUUID).stateName(stateEntity.getState_name());
+            StatesListResponse statesListResponse = new StatesListResponse().addStatesItem(statesList);
+            states.add(statesListResponse);
+        }
+
+        return new ResponseEntity<List<StatesListResponse>>(states, HttpStatus.OK);
 
     }
 
