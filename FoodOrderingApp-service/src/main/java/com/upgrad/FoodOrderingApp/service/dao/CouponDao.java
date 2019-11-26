@@ -23,10 +23,18 @@ public class CouponDao {
     }
 
 
-    public CouponEntity getCouponById(CouponEntity couponId) {
+    public CouponEntity getCouponById(UUID couponId) {
         try {
-            return entityManager.createNamedQuery("couponById" , CouponEntity.class).setParameter("coupon_id" , couponId).getSingleResult();
+            return entityManager.createNamedQuery("couponById" , CouponEntity.class).setParameter("uuid", couponId).getSingleResult();
         } catch (NoResultException nre) {
+            return null;
+        }
+    }
+// added one below
+    public CouponEntity getCouponByUuid(String UUID){
+        try {
+            return entityManager.createNamedQuery("couponByUuid", CouponEntity.class).setParameter("uuid", UUID).getSingleResult();
+        } catch (NoResultException nre){
             return null;
         }
     }

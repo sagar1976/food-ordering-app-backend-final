@@ -14,6 +14,7 @@ import java.time.ZonedDateTime;
 @Table(name = "customer_auth")
 @NamedQueries({
         @NamedQuery(name = "getToken" , query = "select ct from CustomerAuthTokenEntity ct where ct.accessToken = :accessToken "),
+        @NamedQuery(name = "customerByAccessToken" , query = "select ct from CustomerAuthTokenEntity ct where ct.accessToken = :accessToken ")
 })
 public class CustomerAuthTokenEntity {
 

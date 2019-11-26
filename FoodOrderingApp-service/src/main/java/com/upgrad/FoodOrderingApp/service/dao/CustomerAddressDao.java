@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
@@ -29,6 +30,15 @@ public class CustomerAddressDao {
         try {
             return entityManager.createNamedQuery("getAddress", CustomerAddressEntity.class).setParameter("address", address).getSingleResult();
         }catch (NoResultException nre){
+            return null;
+        }
+    }
+
+    //Added check this later for conflicts
+    public TypedQuery<CustomerAddressEntity> getCustomerAddressByUuId(String id) {
+        try {
+            return entityManager.createNamedQuery("getCustomerAddressById", CustomerAddressEntity.class).setParameter("id", id);
+        } catch (NoResultException nre) {
             return null;
         }
     }

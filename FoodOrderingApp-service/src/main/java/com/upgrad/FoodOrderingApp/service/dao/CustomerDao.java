@@ -59,8 +59,7 @@ public class CustomerDao {
 
     public CustomerAuthTokenEntity checkAuthToken(String accessToken){
         try {
-            return entityManager.createNamedQuery("getToken", CustomerAuthTokenEntity.class).setParameter("accessToken", accessToken).
-                    getSingleResult();
+            return entityManager.createNamedQuery("getToken", CustomerAuthTokenEntity.class).setParameter("accessToken", accessToken).getSingleResult();
         }catch(NoResultException nre){
             return null;
         }
@@ -75,5 +74,22 @@ public class CustomerDao {
     public CustomerEntity updatePassword(CustomerEntity customerEntity) {
         entityManager.merge(customerEntity);
         return customerEntity;
+    }
+
+    //Check this later below 2
+    public CustomerEntity getCustomerByCustomerId(CustomerEntity custId){
+        try{
+            return entityManager.createNamedQuery("getCustomerById", CustomerEntity.class).setParameter("id", custId).getSingleResult();
+        }catch (NoResultException nre) {
+            return null;
+        }
+    }
+
+    public CustomerAuthTokenEntity getCustomerByAccessToken(String accessToken) {
+        try {
+            return entityManager.createNamedQuery("customerByAccessToken" , CustomerAuthTokenEntity.class).setParameter("accessToken", accessToken).getSingleResult();
+        } catch (NoResultException nre){
+            return null;
+        }
     }
 }

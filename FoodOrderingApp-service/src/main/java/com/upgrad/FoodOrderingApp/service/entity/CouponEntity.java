@@ -3,14 +3,13 @@ package com.upgrad.FoodOrderingApp.service.entity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.UUID;
 
 @Entity
 @Table(name = "coupon")
 @NamedQueries(
         {
-                @NamedQuery(name = "couponByName", query = "select ce from CouponEntity ce where ce.couponName =:couponName"),
-                @NamedQuery(name = "couponById", query = "select ce from CouponEntity ce where ce.uuid =:uuid")
+                @NamedQuery(name = "couponByName", query = "select c from CouponEntity c where c.couponName =:coupon_name"),
+                @NamedQuery(name = "couponByUuid", query = "select c from CouponEntity c where c.uuid =:uuid")
         }
 )
 public class CouponEntity {
@@ -22,7 +21,7 @@ public class CouponEntity {
     @Column(name = "UUID")
     @Size(max = 200)
     @NotNull
-    private UUID uuid;
+    private String uuid;
 
     @Column(name = "coupon_name")
     @Size(max = 255)
@@ -40,11 +39,11 @@ public class CouponEntity {
         this.id = id;
     }
 
-    public UUID getUuid() {
+    public String getUuid() {
         return uuid;
     }
 
-    public void setUuid(UUID uuid) {
+    public void setUuid(String uuid) {
         this.uuid = uuid;
     }
 

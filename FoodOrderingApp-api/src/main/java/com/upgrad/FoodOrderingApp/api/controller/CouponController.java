@@ -11,6 +11,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping("/")
 public class CouponController {
@@ -23,8 +25,8 @@ public class CouponController {
     public ResponseEntity<CouponDetailsResponse> getCoupon(@PathVariable("coupon_name") final String couponName, @RequestHeader("authorization") final String authorization) throws AuthorizationFailedException, CouponNotFoundException {
         String [] bearerToken = authorization.split("Bearer ");
         final CouponEntity couponEntity = couponService.getCouponDetails(couponName, bearerToken[1]);
-
-        CouponDetailsResponse couponDetailsResponse = new CouponDetailsResponse().id(couponEntity.getUuid()).couponName(couponEntity.getCouponName()).percent(couponEntity.getPercent());
+        UUID couponUUID = UUID.fromString(couponEntity.getUuid());
+        CouponDetailsResponse couponDetailsResponse = new CouponDetailsResponse().id(couponUUID).couponName(couponEntity.getCouponName()).percent(couponEntity.getPercent());
         return new ResponseEntity<CouponDetailsResponse>(couponDetailsResponse, HttpStatus.OK);
 
     }
